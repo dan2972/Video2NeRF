@@ -1,0 +1,9 @@
+images/
+images_*/
+videos/
+colmap.db*
+sparse/
+transforms.json
+colmap_text/
+poses_bounds.npy
+*.npz

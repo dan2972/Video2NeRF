@@ -1,0 +1,6 @@
+imageio==2.34.2
+matplotlib==3.9.1.post1
+numpy==2.0.1
+opencv_python==4.10.0.84
+scikit-image==0.24.0
+tqdm==4.66.5
