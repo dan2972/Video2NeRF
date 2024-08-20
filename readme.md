@@ -44,9 +44,10 @@ This should have created a folder names `images` which contains all the images f
 
 Now run `colmap2nerf.py`. Do not run this inside the scripts folder.  
 
-This may take a while to run depending on the machine and size of the images.
+You may need to install COLMAP if you are using macOS or [Linux](https://colmap.github.io/install.html). If you are using macOS, using [homebrew](https://brew.sh/) may be the simplest way to install it (e.g. `brew install colmap`). 
 
-You may need to install COLMAP if you are using macOS or [Linux](https://colmap.github.io/install.html). If you are using macOS, using homebrew may be the simplest way to install it (e.g. `brew install colmap`). 
+
+This may take a while to run depending on the machine and size of the images.
 
 ```
 python ./scripts/colmap2nerf.py --colmap_matcher exhaustive --run_colmap
@@ -57,9 +58,9 @@ python imgs2poses.py ./
 ```
 Finally, we can generate the final dataset for your NeRF Project.  
 
-`-p` PATH: specifies the base directory for the script  
-`-o` FILE_NAME: specifies the output file name  
-`--factor` N: downsamples the images by a factor of N  
+`-p PATH`: specifies the base directory for the script  
+`-o FILE_NAME`: specifies the output file name  
+`--factor N`: downsamples the images by a factor of N  
 `--spherify`: makes it so that the render poses are a sphere around an object, rather than a spiral  
 ```
 python load_llff.py -p ./ -o my_dataset --factor 8 --spherify
