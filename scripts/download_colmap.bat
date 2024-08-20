@@ -12,10 +12,10 @@ set cwd=%cd%
 cd /D %~dp0
 
 echo Downloading COLMAP...
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/colmap/colmap/releases/download/3.7/COLMAP-3.7-windows-no-cuda.zip', 'colmap.zip')"
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/colmap/colmap/releases/download/3.10/colmap-x64-windows-cuda.zip', 'colmap.zip')"
 
 echo Unzipping...
-powershell Expand-Archive colmap.zip -DestinationPath ..\external\colmap -Force
+powershell Expand-Archive colmap.zip -DestinationPath ..\external\colmap\COLMAP -Force
 
 echo Cleaning up...
 if exist colmap.zip del /f /q colmap.zip

@@ -7,3 +7,4 @@ transforms.json
 colmap_text/
 poses_bounds.npy
 *.npz
+external/
